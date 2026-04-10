@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: kalshi-predictor
-        image: maxcoppa/application:latest:v0.0.1
+        image: maxcoppa/application:v0.0.1
         ports:
         - containerPort: 8000
         env:
