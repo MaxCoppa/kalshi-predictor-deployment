@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/MaxCoppa/application-deployment.git
+    repoURL: https://github.com/MaxCoppa/kalshi-predictor-deployment
     targetRevision: main
     path: deployment
   destination:
