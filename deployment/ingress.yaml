@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-headers: "Authorization, Content-Type"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
 spec:
-  ingressClassName: nginx
+  ingressClassName: onyxia
   tls:
   - hosts:
     - kalshi-predictor.lab.sspcloud.fr
