@@ -15,16 +15,16 @@ spec:
         app: kalshi-predictor
     spec:
       containers:
-      - name: kalshi-predictor
-        image: maxcoppa/application:v0.0.5
-        ports:
-        - containerPort: 8000
-        env:
-        - name: JETON_API
-          valueFrom:
-            secretKeyRef:
-              name: api-jeton
-              key: JETON_API
+        - name: kalshi-predictor
+          image: maxcoppa/application:v0.0.5
+          ports:
+            - containerPort: 8000
+          env:
+            - name: JETON_API
+              valueFrom:
+                secretKeyRef:
+                  name: api-jeton
+                  key: JETON_API
             - name: MLFLOW_TRACKING_URI
               value: "https://user-avautrin-mlflow.user.lab.sspcloud.fr"
             - name: MLFLOW_TRACKING_USERNAME
